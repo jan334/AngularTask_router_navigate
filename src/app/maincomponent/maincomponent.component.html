@@ -1,0 +1,174 @@
+<div class="bg-section">
+    <section>
+      <div class="header-section">
+        <div class="left-Side">
+          <mat-icon class="toy1"> alarm </mat-icon>&nbsp;&nbsp;<span id="textspan">08:33PM</span>
+        </div>
+        <div class="right-Side">
+          <mat-icon class="toy1"> wifi_lock </mat-icon>&nbsp;&nbsp;<span id="textspan">97%</span><span>&nbsp;&nbsp;<mat-icon class="toy1" id="chargingbattery"> battery_charging_full </mat-icon></span>
+        </div>
+      </div>  
+    </section>
+   
+  </div>
+  <div class="container">
+    <h2>Welcome to the Customer Support</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="boxes">
+          <div class="box-heade">
+            <div class="icon1">
+              <mat-icon>desktop_mac</mat-icon>&nbsp;&nbsp;<span id="spanid">Hardware Issues</span>
+            </div>
+            <div class="icon2">
+              <button type="button" (click)="toggleClick()" class="btn btn-success btn-circle">
+                  <i class="glyphicon glyphicon-ok"></i>
+                  <span id="iconid" *ngIf="show===true">-</span>
+                  <span id="iconid" *ngIf="show===false">+</span>
+                </button>&nbsp;&nbsp;<span id="spanid2">Explore</span>
+            </div>
+            
+          </div>
+          <div class="panel" *ngIf="show">
+            <mat-expansion-panel class="paneldesign" (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <b>Lorem ipsum dolor sit amet, consectetur adipiscing</b>
+            </mat-panel-title>
+            <mat-panel-description>
+            
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+            do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Ut enim ad minim veniam, quis nostrud.
+            </p>
+        </mat-expansion-panel>
+        <hr>
+        <mat-expansion-panel class="paneldesign" (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <b>Lorem ipsum dolor sit amet, consectetur adipiscing</b>
+            </mat-panel-title>
+            <mat-panel-description>
+            
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+            do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Ut enim ad minim veniam, quis nostrud.
+            </p>
+        </mat-expansion-panel>
+        <hr>
+        <mat-expansion-panel class="paneldesign" (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <b>Lorem ipsum dolor sit amet, consectetur adipiscing</b>
+            </mat-panel-title>
+            <mat-panel-description>
+            
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+            do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Ut enim ad minim veniam, quis nostrud.
+            </p>
+        </mat-expansion-panel>
+        <hr>
+        <br>
+        <a (click)="nextpage()" class="anchertag">+ Add Complain</a>
+        
+      </div>
+      <br>
+          <button class="button" (click)="featureClick()" id="btnsetting"><mat-icon class="toy1" id="chargingbattery">repeat</mat-icon>&nbsp;&nbsp;Request New Feature</button>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="boxes">
+          <div class="box-heade">
+            <div class="icon1">
+              <mat-icon>now_widgets</mat-icon>&nbsp;&nbsp;<span id="spanid">Software Issues</span>
+            </div>
+            <div class="icon2">
+              <button type="button" (click)="toggleClick1()" class="btn btn-success btn-circle">
+                  <i class="glyphicon glyphicon-ok"></i>
+                  <span id="iconid" *ngIf="show1===true">-</span>
+                  <span id="iconid" *ngIf="show1===false">+</span>
+                </button>&nbsp;&nbsp;<span id="spanid2">Explore</span>
+            </div>
+          </div>
+          <div class="panel" *ngIf="show1">
+            <mat-expansion-panel class="paneldesign" (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <b>Lorem ipsum dolor sit amet, consectetur adipiscing</b>
+            </mat-panel-title>
+            <mat-panel-description>
+            
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+            do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Ut enim ad minim veniam, quis nostrud.
+            </p>
+        </mat-expansion-panel>
+        <hr>
+        <mat-expansion-panel class="paneldesign" (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <b>Lorem ipsum dolor sit amet, consectetur adipiscing</b>
+            </mat-panel-title>
+            <mat-panel-description>
+            
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+            do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Ut enim ad minim veniam, quis nostrud.
+            </p>
+        </mat-expansion-panel>
+        <hr>
+        <mat-expansion-panel class="paneldesign" (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <b>Lorem ipsum dolor sit amet, consectetur adipiscing</b>
+            </mat-panel-title>
+            <mat-panel-description>
+            
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+            do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Ut enim ad minim veniam, quis nostrud.
+            </p>
+        </mat-expansion-panel>
+        <hr>
+        <br>
+        <a (click)="nextpage()" class="anchertag">+ Add Complain</a>
+       
+      </div>
+      <br> 
+      
+      <button (click)="upload()" class="button" id="btnsetting"><mat-icon class="toy1">file_upload</mat-icon>&nbsp;&nbsp;Upload Logs</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-icon">
+      <mat-icon id="playIcon" class="playicon1">play_arrow</mat-icon>
+      <mat-icon id="playIcon">fiber_manual_record</mat-icon>
+       <mat-icon id="playIcon">play_arrow</mat-icon>
+    </div>
+
+  </div>
+  
+
+  
